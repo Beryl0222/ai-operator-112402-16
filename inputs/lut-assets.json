@@ -1,0 +1,91 @@
+{
+  "size": 33,
+  "pixels": 102400,
+  "epsilon": 1e-06,
+  "inverseTol": 2e-05,
+  "workBytes": 1048576,
+  "readBudget": 350000,
+  "pivotBudget": 800000,
+  "patch": [
+    17,
+    18,
+    8,
+    24,
+    4,
+    29
+  ],
+  "variants": [
+    "main",
+    "folded",
+    "flat"
+  ],
+  "shared": [
+    [
+      "preview-A",
+      "x17"
+    ],
+    [
+      "preview-B",
+      "x17"
+    ]
+  ],
+  "probes": [
+    [
+      0.5,
+      0.25,
+      0.25
+    ],
+    [
+      0.53,
+      0.25,
+      0.25
+    ],
+    [
+      0.36,
+      0.5,
+      0.5
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "edits": [
+    [
+      "apply",
+      "main",
+      "preview-A"
+    ],
+    [
+      "rehearse",
+      "folded"
+    ],
+    [
+      "patch",
+      "flat",
+      "x17"
+    ],
+    [
+      "inverse",
+      "main",
+      [
+        0.5,
+        0.25,
+        0.25
+      ]
+    ],
+    [
+      "retire",
+      "source"
+    ],
+    [
+      "undo",
+      "preview-B"
+    ],
+    [
+      "history",
+      "preview-A"
+    ]
+  ]
+}
